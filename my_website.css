@@ -4,13 +4,14 @@ header{
 	background-size: cover;
 	height: 260px;
 	color: white;
-	font-family: "Shadows Into Light Two";
+	font-family: "Waiting for the Sunrise";
 	padding-bottom: 0px;
 }
 
 #main_title {
-	font-size: 80px;
-	padding-top: 2cm;
+	font-size: 65px;
+	padding-top: 1.9cm;
+	padding-left: 1.3cm;
 }
 a{
 	color:black
