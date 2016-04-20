@@ -1,0 +1,27 @@
+header{
+	text-align: center;
+	background: url("van5.jpeg");
+	background-size: cover;
+	height: 260px;
+	color: white;
+	font-family: "Amatic SC"; 
+}
+#main_title {
+	font-size: 100px;
+	padding-top: 1cm;
+}
+a{
+	color:white;
+}
+
+ul#menu_whole {
+background-color: #808080;
+padding-bottom: 0px
+
+}
+
+.menu_item {
+	display:inline;
+	padding: 0px 30px 0px 30px;
+	font-size: 35px;
+}
