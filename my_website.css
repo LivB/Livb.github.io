@@ -1,8 +1,17 @@
-.header-site {
-	position: relative;
+.whole-header {
 	width: 100%;
+	height: 260px;
 }
 
+.inner-headblock{
+	background: url("van5.jpeg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 260px;
+	display: inline-block;
+
+}
 
 #main_title {
 	font-size: 65px;
@@ -10,7 +19,7 @@
 	font-weight: bolder;
 	position: absolute;
 	text-align: center;
-	top: 40px;
+	padding-top: 60px;
 	width:100%;
 	font-family: "Waiting for the Sunrise";
 }
@@ -19,11 +28,11 @@
 	padding-left: 1cm;
 	color: #d7d7d7;
 	font-family: "Poiret One";
-	line-height: 0%;
 	position: absolute;
 	text-align: center;
 	width:100%;
 	top:120px;
+
 
 }
 
