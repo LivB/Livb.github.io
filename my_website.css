@@ -25,6 +25,11 @@
 	font-family: "Waiting for the Sunrise";
 }
 
+#title_link{
+	color:white;
+	text-decoration: none;
+}
+
 #sub_heading {
 	padding-left: 1cm;
 	color: #d7d7d7;
@@ -43,6 +48,8 @@ ul#menu_whole {
 	padding-bottom: 20px;
 	text-align: center;
 	border-bottom-style: groove;
+	border-bottom-color: #ADDFFF;
+	border-bottom-width: 1px;
 	border-top-style: groove;
 	padding-top: 20px;
 
@@ -67,6 +74,10 @@ body {
     box-shadow:0;
     border-radius:0;
 
+}
+
+.thumbnail {
+	margin-bottom: 0px;
 }
 
 .row {
