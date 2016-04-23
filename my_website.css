@@ -10,7 +10,7 @@
 	width: 100%;
 	height: 260px;
 	display: inline-block;
-	background-position: 50% 50%;s
+	background-position: 50% 50%;
 
 }
 
@@ -40,37 +40,41 @@
 ul#menu_whole {
 	font-family: "Poiret One";
 	background-color: white;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	text-align: center;
 	border-bottom-style: groove;
-	padding-top: 0px;
+	border-top-style: groove;
+	padding-top: 20px;
 
 }
 
 .menu_item {
 	display:inline;
-	padding: 0px 30px 00px 30px;
-	font-size: 35px;
+	padding: 0px 40px 0px 40px;
+	font-size: 1.8em;
 }
+
 
 body { 
 	font-family: "Amatic SC"
 	padding-top: 10px;
 	overflow-x: hidden;
+
 }
 
  .row .thumbnail {
     border:0;
     box-shadow:0;
     border-radius:0;
+
 }
 
 .row {
 	 overflow-x: hidden;
+	 margin: 0px;
 }
 
-.col-xs-12.col-sm-6.col-md-4{
-	padding-right: 0px;
-	padding-left:  0px;
-
+.col-xs-12.col-sm-6.col-md-4 {
+	padding: 5px;
 }
+
