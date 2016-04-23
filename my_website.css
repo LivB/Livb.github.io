@@ -10,7 +10,7 @@
 	width: 100%;
 	height: 260px;
 	display: inline-block;
-	background-position: 50% 50%;
+	background-position: 50% 50%;s
 
 }
 
@@ -58,3 +58,11 @@ font-family: "Amatic SC"
 padding-top: 10px;
 ;
  }
+
+.row{}
+
+ .row .thumbnail {
+    border:0;
+    box-shadow:0;
+    border-radius:0;
+}
