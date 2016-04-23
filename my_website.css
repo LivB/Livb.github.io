@@ -5,11 +5,12 @@
 
 .inner-headblock{
 	background: url("van5.jpeg");
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 260px;
 	display: inline-block;
+	background-position: 50% 50%;
 
 }
 
