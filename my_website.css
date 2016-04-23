@@ -23,6 +23,7 @@
 	padding-top: 60px;
 	width:100%;
 	font-family: "Waiting for the Sunrise";
+	text-shadow: 2px 2px 8px #000;
 }
 
 #title_link{
@@ -102,3 +103,7 @@ body {
    	  font-size: 30px; 
    	}
  }
+
+ .thumbnail:hover { 
+    color: yellow;
+}
