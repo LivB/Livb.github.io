@@ -54,15 +54,19 @@ ul#menu_whole {
 }
 
 body { 
-font-family: "Amatic SC"
-padding-top: 10px;
-;
- }
-
-.row{}
+	font-family: "Amatic SC"
+	padding-top: 10px;
+	overflow-x: hidden;
+}
 
  .row .thumbnail {
     border:0;
     box-shadow:0;
     border-radius:0;
+}
+
+.col-xs-12.col-sm-6.col-md-4{
+	padding-right: 10px;
+	padding-left:  0px;
+
 }
