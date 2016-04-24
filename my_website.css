@@ -64,7 +64,7 @@ ul#menu_whole {
 
 
 body { 
-	font-family: "Amatic SC"
+	font-family: "Poiret One";
 	padding-top: 10px;
 	overflow-x: hidden;
 
@@ -88,9 +88,63 @@ body {
 
 .row div {
 	padding: 5px;
+
 }
 
+.text_photo {
+	text-align: center;
+	position: absolute;
+	margin-top: 25%;
+	width: 100%;
+	height:100%
+	background-color#ffffff;
+	opacity: 0;
+	color:black;
+	font-weight: bolder;
+}
 
+.subtext_photo{
+	text-align: center;
+	position: absolute;
+	margin-top: 35%;
+	width: 100%;
+	height:100%
+	background-color#ffffff;
+	opacity: 0;
+	color:black;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+
+.col-xs-12.col-sm-6.col-md-4:hover img{
+	opacity: 0.3;
+}
+
+.col-xs-12.col-sm-6.col-md-4:hover .text_photo{
+	opacity: 1;
+
+}
+
+.col-xs-12.col-sm-6.col-md-4:hover .subtext_photo{
+	opacity: 1;
+
+}
+
+.col-xs-12.col-sm-12.col-md-4:hover img{
+	opacity: 0.3;
+}
+
+.col-xs-12.col-sm-6.col-md-6:hover img{
+	opacity: 0.3;
+}
+
+.col-xs-12.col-sm-12.col-md-6:hover img{
+	opacity: 0.3;
+}
+
+.text_wheel:hover{
+
+}
 
 @media screen and (max-width: 352px) {
 
@@ -103,7 +157,3 @@ body {
    	  font-size: 30px; 
    	}
  }
-
- .thumbnail:hover { 
-    color: yellow;
-}
