@@ -120,7 +120,7 @@ body {
 	-webkit-transition-duration: 0.6s; /* Safari */
     transition-duration: 0.6s;
 }
-.col-xs-12.col-sm-6.col-md-4:hover img, .col-xs-12.col-sm-6.col-md-4:focus img{
+.col-xs-12.col-sm-6.col-md-4:hover img {
 	opacity: 0.3;
 	-webkit-transition-duration: 0.6s; /* Safari */
     transition-duration: 0.6s;d
