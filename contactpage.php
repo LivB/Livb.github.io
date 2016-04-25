@@ -1,44 +1,4 @@
-<?php
-if (!empty($_POST)){
-  extract($_POST);
-  $valid = true;
-  if(empty($name)){
-    $valid=false;
-    $nameerror="I need your name to receive your message";
-  }
-  if(!filter_var($email, FILTER_VALIDATE_EMAIL) === true) {
-    $valid=false;
-    $emailerror="Please enter a valid email...";
-  }
-  if(empty($email)){
-    $valid=false;
-    $emailerror="I need your email to answer";
-  }
-  if(empty($message)){
-    $valid=false;
-    $messageerror="I won't be able to answer if your message is empty!";
-  }
-
-  if($valid){
-    $to = "hsobarne@liv.ac.uk";
-    $subject = $name." sent a message";
-    $headers = "From: $name <$email>";
-    $message = stripslashes($message);
-    $name = stripslashes($name);
-    if (mail($to,$subject,$message,$headers)) {
-      $error = "Your message has been sent. I will reply as quickly as possible
-       :)";
-      unset($name);
-      unset($email);
-      unset($message);
-    }
-    else{
-      $error = "Ouch... Sorry, there is a technical problem. Please use my email adress to contact me";
-    }
-  }
-}
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <link href="./normalize.css" rel="stylesheet">
@@ -75,19 +35,15 @@ if (!empty($_POST)){
       <div id="form-div">
         <form action="mail.php" class="form" id="form1" method="post">
           <p class="name">
-            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" required value="<?php if(isset($name)) echo $name; ?>"/>
+            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
           </p>
       
           <p class="email">
-            <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" required value="<?php if(isset($email)) echo $email; ?>"/>
+            <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
           </p>
       
           <p class="text">
-           <textarea name="message" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment" required>><?php if(isset($message)) echo $message; ?></textarea>
-           <?php if (isset($nameerror))echo "<div id=\"texterror\">$nameerror</div>"; ?>
-          <?php if (isset($emailerror))echo "<div id=\"texterror\">$emailerror</div>"; ?>
-          <?php if (isset($messageerror))echo "<div id=\"texterror\">$messageerror</div>"; ?>
-          <?php if(isset($error)){ echo "<div id=\"validation-message\">$error</div>"; } ?>
+           <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
           </p>
           <div class="submit">
             <input type="submit" value="SEND" id="button-blue"/>
