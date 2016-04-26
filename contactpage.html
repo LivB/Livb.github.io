@@ -3,6 +3,7 @@
   <head>
     <link href="./normalize.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" type="text/css" href="./bootstrap-files/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./bootstrap-files/css/bootstrap-theme.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -45,6 +46,9 @@
           <p class="text">
            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
           </p>
+
+          <div class="g-recaptcha" data-sitekey="6LekYR4TAAAAAJ5ai5SLQ7VkvDv3GgzWzKhOHN3Y"></div>
+          
           <div class="submit">
             <input type="submit" value="SEND" id="button-blue"/>
               <div class="ease"></div>
