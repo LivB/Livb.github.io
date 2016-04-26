@@ -24,6 +24,8 @@
 	width:100%;
 	font-family: "Waiting for the Sunrise";
 	text-shadow: 2px 2px 8px #000;
+	-webkit-transition-duration: 0; /* Safari */
+    transition-duration: 0;
 }
 
 #title_link{
@@ -114,6 +116,43 @@ body {
 	color:black;
 	font-weight: bolder;
 	letter-spacing: 2px;
+
+}
+.col-xs-12.col-sm-6.col-md-4:hover .text_photo{
+	opacity: 1;
+
+}
+
+.col-xs-12.col-sm-6.col-md-4:hover .subtext_photo{
+	opacity: 1;
+
+}
+
+.col-xs-12.col-sm-6.col-md-6:hover .text_photo{
+	opacity: 1;
+}
+
+.col-xs-12.col-sm-6.col-md-6:hover .subtext_photo{
+	opacity: 1;
+}
+
+
+.col-xs-12.col-sm-12.col-md-4:hover .text_photo{
+	opacity: 1;
+
+}
+
+.col-xs-12.col-sm-12.col-md-4:hover .subtext_photo{
+	opacity: 1;
+
+}
+
+.col-xs-12.col-sm-12.col-md-6:hover .text_photo {
+	opacity: 1;
+}
+
+.col-xs-12.col-sm-12.col-md-6:hover .subtext_photo {
+	opacity: 1;
 }
 
 .col-xs-12.col-sm-6.col-md-4 img{
@@ -124,16 +163,6 @@ body {
 	opacity: 0.3;
 	-webkit-transition-duration: 0.6s; /* Safari */
     transition-duration: 0.6s;d
-}
-
-.col-xs-12.col-sm-6.col-md-4:hover .text_photo{
-	opacity: 1;
-
-}
-
-.col-xs-12.col-sm-6.col-md-4:hover .subtext_photo{
-	opacity: 1;
-
 }
 
 .col-xs-12.col-sm-12.col-md-4 img{
@@ -185,6 +214,108 @@ body {
    	}
  }
 
+ /*About US ----------------*/
+
+.central_grey{
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  	margin-top:30px;
+	margin-left: -210px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.central_text {
+	border:20px;
+	background-color:white;
+	width:100%;
+	 -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+#about_us
+{
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color:white;
+	text-shadow: 2px 2px 2px #000;
+	font-weight: bolder;
+	font-size: 50px;
+
+}
+
+.paragraph_indiv{
+	padding: 8px;
+	font-size: 20px;
+}
+
+.paragraph_indiv_social {
+	padding: 8px;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.fa-camera-retro.fa-2x {
+	color:#493D26;
+	text-shadow: 2px 2px 2px #d3d3d3;
+	-webkit-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-o-transition: .2s ease;
+	-ms-transition: .2s ease;
+	transition: .2s ease;
+}
+
+.fa-camera-retro.fa-2x:hover {
+	color:#837E7C;
+}
+
+.fa-facebook-official.fa-2x {
+	color: #1569C7;
+	text-shadow: 2px 2px 2px #d3d3d3;
+	-webkit-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-o-transition: .2s ease;
+	-ms-transition: .2s ease;
+	transition: .2s ease;
+}
+
+.fa-facebook-official.fa-2x:hover {
+	color:#79BAEC;
+}
+
+.fa-flickr.fa-2x {
+	color: #C12267;
+	text-shadow: 2px 2px 2px #d3d3d3;
+	-webkit-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-o-transition: .2s ease;
+	-ms-transition: .2s ease;
+	transition: .2s ease;
+}
+
+.fa-flickr.fa-2x:hover {
+	color:#F778A1;
+}
+
+@media only screen and (max-width: 580px) {
+	.central_grey {
+		left: 3%;
+		margin-right: 3%;
+		margin-left: 3%;
+		width: 88%;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
  /*Contact Page ---------------*/
 
  @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -193,7 +324,7 @@ html{    background:url(Contact_background.jpg);
   	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 1000px;
+	height: 1300px;
 	background-position: 50% 50%;
 }
 
