@@ -217,14 +217,15 @@ body {
  /*About US ----------------*/
 
 .central_grey{
+
 	background-color:rgba(72,72,72,0.4);
 	padding-left:35px;
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;
-	width: 450px;
+	width: 800px;
 	float: left;
-	left: 50%;
+	left: 36%;
 	position: absolute;
   	margin-top:30px;
 	margin-left: -210px;
@@ -305,7 +306,7 @@ body {
 	color:#F778A1;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 1011px) {
 	.central_grey {
 		left: 3%;
 		margin-right: 3%;
@@ -314,6 +315,7 @@ body {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
+
 }
 
  /*Contact Page ---------------*/
@@ -324,7 +326,7 @@ html{    background:url(Contact_background.jpg);
   	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 1300px;
+	height: 1200px;
 	background-position: 50% 50%;
 }
 
