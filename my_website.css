@@ -202,6 +202,48 @@ body {
 
 }
 
+ #footer_main {
+ 	position: absolute;
+ 	background-color:#b3b3b3;
+ 	height: 15%;
+ 	width: 100%;
+ 	padding-top: 15px;
+ 	border-radius: 5px;
+ 	border-width: 20px;
+
+ }
+
+#footer_title {
+	font-size: 45px;
+	color: white;
+	font-weight: bolder;
+	text-align: left;
+	padding-top: 0;
+	margin-top: 0;
+	width:100%;
+	font-family: "Waiting for the Sunrise";
+	text-shadow: 2px 2px 8px #000;
+	-webkit-transition-duration: 0; /* Safari */
+    transition-duration: 0;
+
+}
+
+#footertitle_link:hover {
+	color:white;
+}
+
+ #footer_text {
+ 	color: white;
+ 	text-shadow: 2px 2px 8px #000;
+ 	text-align: right;
+ 	font-size: 15px;
+ }
+
+ #footer_text a{
+ 	color: white;
+ 	text-decoration: underline;
+ }
+
 @media screen and (max-width: 352px) {
 
    #main_title { 
@@ -212,7 +254,23 @@ body {
    #sub_heading { 
    	  font-size: 30px; 
    	}
+
+   	#footer_title {
+ 		font-size: 20px;
+ 	}
+
  }
+
+ @media only screen and (max-width: 744px) {
+ 	#footer_main {
+ 		height: auto;
+ 	}
+
+ 	#footer_title {
+ 		font-size: 35px;
+ 	}
+
+}
 
  /*About US ----------------*/
 
